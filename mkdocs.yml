@@ -1,7 +1,27 @@
 site_name: "Linux Commands"
-site_url: "https://SnakeByteDev.github.io/LinuxCommands/"
+
 theme:
   name: "material"
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - palette.toggle
+    - navigation.footer
+    - navigation.sidebar
+    - navigation.expand
 
 nav:
   - Home: index.md
@@ -16,4 +36,7 @@ markdown_extensions:
       permalink: True
   - codehilite
 
-repo_url: "https://github.com/SnakeByteDev/LinuxCommands"
+repo_url: "https://github.com/SnakeByteDev/linux-commands"
+
+extra:
+  generator: false
